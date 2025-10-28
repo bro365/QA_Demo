@@ -1,0 +1,2 @@
+Register form - Autofill email -> Ostala polja javljaju errore iako su popunjena, nemogucnost registiranja.
+Recovery password -> email link ne vodi nigdje

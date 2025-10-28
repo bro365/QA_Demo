@@ -1,14 +1,14 @@
-# 🧪 TEST_PLAN.md
+# TEST_PLAN.md
 
 ## 1. Analiza aplikacije
 
-(Ovdje napiši ukratko šta aplikacija radi, njenu svrhu i glavne dijelove.)
+Glavna funkcionalnost aplikacije je izrada i pregled korisničkih foto albuma. Korisnik se najprije treba registrirati te potvrditi e-mail adresu te nakon logina, u mogućnosti je izraditi fotoalbume. Svaki posjetitelj home stranice može pregledati cover slike već napravljenih albume drugih korisnika. Daljnje funkcionalnosti korisničkog računa su logout i password recovery.
 
 ## 2. Ključne funkcionalnosti
 
 | Funkcionalnost | Opis                             |
 | -------------- | -------------------------------- |
-| Login          | Omogućava prijavu korisnika.     |
+| Login          | Prijava korisnika.               |
 | Upload         | Dodavanje nove slike u galeriju. |
 | View Gallery   | Pregled svih slika u mreži.      |
 | Delete         | Brisanje postojeće slike.        |
@@ -21,7 +21,7 @@
 | Upload         | HIGH      | Centralni dio aplikacije.  |
 | Delete         | HIGH      | Kritično za podatke.       |
 | Search         | MEDIUM    | Korisno ali nije presudno. |
-| Register       | LOW       | Koristi se rijetko.        |
+| Register       | LOW       | Koristi se samo jednom.    |
 
 ## 4. Test strategy
 

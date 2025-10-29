@@ -2,7 +2,7 @@
 
 ## 1. Analiza aplikacije
 
-Glavna funkcionalnost aplikacije je izrada i pregled korisničkih foto albuma. Korisnik se najprije treba registrirati te potvrditi e-mail adresu te nakon logina, u mogućnosti je izraditi fotoalbume. Svaki posjetitelj home stranice može pregledati cover slike već napravljenih albume drugih korisnika. Daljnje funkcionalnosti korisničkog računa su logout i password recovery.
+Glavna funkcionalnost aplikacije je izrada i pregled korisničkih albuma. Korisnik se najprije treba registrirati te potvrditi e-mail adresu te nakon logina, u mogućnosti je izraditi albume. Svaki posjetitelj home stranice može pregledati cover slike već napravljenih albume drugih korisnika. Daljnje funkcionalnosti korisničkog računa su logout i password recovery.
 
 ## 2. Ključne funkcionalnosti
 
@@ -12,6 +12,7 @@ Glavna funkcionalnost aplikacije je izrada i pregled korisničkih foto albuma. K
 | Upload         | Dodavanje nove slike u galeriju. |
 | View Gallery   | Pregled svih slika u mreži.      |
 | Delete         | Brisanje postojeće slike.        |
+| Register       | Registracija korisnika.          |
 
 ## 3. Automation prioritizacija
 
@@ -20,15 +21,14 @@ Glavna funkcionalnost aplikacije je izrada i pregled korisničkih foto albuma. K
 | Login (valid)  | HIGH      | Ključna funkcionalnost.    |
 | Upload         | HIGH      | Centralni dio aplikacije.  |
 | Delete         | HIGH      | Kritično za podatke.       |
-| Search         | MEDIUM    | Korisno ali nije presudno. |
+| Search         | LOW       | Korisno ali nije presudno. |
 | Register       | LOW       | Koristi se samo jednom.    |
 
 ## 4. Test strategy
 
 - **Manual testing** za početno istraživanje i UI verifikaciju.
-- **Automatizacija** pomoću Cypress-a ili Playwright-a.
+- **Automatizacija** pomoću Cypress-a.
 - Fokus na **kritične tokove** (login, upload, delete).
-- **Smoke testovi** nakon svakog builda.
 - **Regression testovi** prije produkcijskog puštanja.
 
 ## 5. Zaključak

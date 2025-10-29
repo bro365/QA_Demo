@@ -9,7 +9,7 @@
 
 ## Manual testing BUGS
 
-**1. Registracija korisnika korištenjem FILL**
+**1. Registracija korisnika korištenjem FILL (Last saved info)**
 
 - **Steps:** Menu -> Register -> U polje email ili username upotrijebiti "Saved info - last used" popup
 - **Expected results:** Izabrani spremljeni podaci su odabrani te možemo nastaviti s unosom ostalih podataka za registraciju
@@ -30,6 +30,7 @@
 - **Expected results:** Show/hide password gumb treba ostati vidljiv i upotrebljiv
 - **Actual results:** Gumb nestane
 - **Priority:** LOW
+- **Severity:** Minor - UX neugodnost
 
 ---
 
@@ -43,9 +44,26 @@
 
 ---
 
-**2. Registracija korisnika - provjera/otkrivanje lozinke**
+**4. Oporavak lozinke**
 
-- **Steps:**
-- **Expected results:**
-- **Actual results:**
-- **Priority:**
+- **Steps:** Menu -> Login -> Klik na "Forgot your password? Recover your password here!" -> Unos postojeće email adrese -> Klik Recover Password gumb
+- **Expected results:** Routanje na stranicu za oporavak lozinke
+- **Actual results:** 404 Error page
+
+![Alt Text](Images/bug4.png)
+
+- **Priority:** MEDIUM
+- **Severity:** Major - Funkcionalnost za oporavak korisničkog računa, ozbiljni problem za Customer Support
+
+---
+
+**5. Nemogućnost pregleda prve slike u albumu**
+
+- **Steps:** (Pretpostavka da je korisnik prijavljen i već ima album i sliku) -> MENU -> Profile -> Klik na album -> Klik na pregled prve slike u albumu
+- **Expected results:** Pregled slike
+- **Actual results:** 404 Page missing
+
+![Alt Text](Images/bug5.png)
+
+- **Priority:** HIGH
+- **Severity:** Major - Osnovna funkcionalnost/svrha aplikacije, pregled slika

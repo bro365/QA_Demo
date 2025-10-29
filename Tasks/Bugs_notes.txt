@@ -1,6 +1,7 @@
 1. Register form - Autofill email -> Ostala polja javljaju errore iako su popunjena, nemogucnost registiranja.
 2. Register form - Gumb za otkrivanje/provjeru lozinke radi samo jednom, kad sakrijemo lozinku, gumb nestane
 3. Menu button ne radi nakon reprodukcije BUG 1.
-Recovery password -> email link ne vodi nigdje
-Nemogucnost pregleda slike -> 404 error
-Login - netocan password ostaje u input boxu, ne brise se.
+4. Recovery password -> email link ne vodi nigdje
+5. Nemogucnost pregleda prve uploadane slike -> 404 error
+6. Uploadanje slike s vec postojecim imenom - nemogucnost izmjene imena
+7. Login - netocan password ostaje u input boxu, ne brise se.

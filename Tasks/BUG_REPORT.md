@@ -61,7 +61,7 @@
 
 - **Steps:** (Pretpostavka da je korisnik prijavljen i već ima album i sliku) -> MENU -> Profile -> Klik na album -> Klik na pregled prve slike u albumu
 - **Expected results:** Pregled slike
-- **Actual results:** 404 Page missing
+- **Actual results:** 404 Image missing
 
 ![Alt Text](Images/bug5.png)
 

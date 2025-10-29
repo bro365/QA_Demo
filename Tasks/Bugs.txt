@@ -1,2 +1,5 @@
 Register form - Autofill email -> Ostala polja javljaju errore iako su popunjena, nemogucnost registiranja.
+Register form - Gumb za otkrivanje/provjeru lozinke radi samo jednom, kad sakrijemo lozinku, gumb nestane
 Recovery password -> email link ne vodi nigdje
+Nemogucnost pregleda slike -> 404 error
+Login - netocan password ostaje u input boxu, ne brise se.

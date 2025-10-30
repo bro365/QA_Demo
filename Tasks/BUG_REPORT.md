@@ -121,4 +121,4 @@
 - **Actual results:** Ne događa se ništa / Console -> Error 400 Bad request
 
 - **Priority:** LOW
-- **Severity:** Minor - UX neugodnost, neispravnost HTML-a, korisnik očekuje nešto svojim klikom
+- **Severity:** Minor - UX neugodnost, korisnik očekuje da se može prijaviti putem društvene mreže

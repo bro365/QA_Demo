@@ -5,3 +5,4 @@
 5. Nemogucnost pregleda prve uploadane slike -> 404 error
 6. Uploadanje slike s vec postojecim imenom - nemogucnost izmjene imena
 7. Login - netocan password ostaje u input boxu, ne brise se.
+8. Footer copyright link

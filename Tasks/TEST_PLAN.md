@@ -2,7 +2,7 @@
 
 ## 1. Analiza aplikacije
 
-Glavna funkcionalnost aplikacije je izrada i pregled korisničkih albuma. Korisnik se najprije treba registrirati te potvrditi e-mail adresu te nakon logina, u mogućnosti je izraditi albume. Svaki posjetitelj home stranice može pregledati cover slike već napravljenih albume drugih korisnika. Daljnje funkcionalnosti korisničkog računa su logout i password recovery.
+Glavna funkcionalnost aplikacije je izrada i pregled korisničkih albuma. Korisnik se najprije treba registrirati te potvrditi e-mail adresu te nakon logina, u mogućnosti je izraditi albume. Svaki posjetitelj home stranice može pregledati cover slike već napravljenih albuma drugih korisnika. Daljnje funkcionalnosti korisničkog računa su logout i password recovery.
 
 ## 2. Ključne funkcionalnosti
 

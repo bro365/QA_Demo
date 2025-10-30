@@ -57,9 +57,16 @@
 
 ---
 
-**5. Nemogućnost pregleda prve slike u albumu**
+**5. Nemogućnost pregleda neparnih uploadanih slika u albumu**
 
-- **Steps:** (Pretpostavka da je korisnik prijavljen i već ima album i sliku) -> MENU -> Profile -> Klik na album -> Klik na pregled prve slike u albumu
+- **Steps:** (Pretpostavka da je korisnik prijavljen i već ima album i sliku) -> MENU -> Profile -> Klik na album -> Klik na pregled prve/treće/pete...(neparni grid) slike u albumu
+
+| 1.  | 2.  | 3.  |
+| --- | --- | --- |
+| 1   | 2   | 3   |
+| 4   | 5   | 6   |
+| 7   | 8   | 9   |
+
 - **Expected results:** Pregled slike
 - **Actual results:** 404 Image missing
 
@@ -67,3 +74,40 @@
 
 - **Priority:** HIGH
 - **Severity:** Major - Osnovna funkcionalnost/svrha aplikacije, pregled slika
+
+---
+
+**6. Uploadanje slike s postojećim imenom**
+
+- **Steps:** (Pretpostavka da je korisnik prijavljen i već ima album i sliku) -> MENU -> Profile -> Klik na album -> Upload photo -> Upload image -> (Photo name je isti kao i prethodna slika) -> Upload
+- **Expected results:** Upozorenje da je ime slike isto, mogućnost promjene imena slike te obaviti upload
+- **Actual results:** Upozorenje da je ime slike isto, sliku nije moguće uploadati iako je ime promjenjeno, upozorenje ostaje
+
+![Alt Text](Images/bug6.png)
+
+- **Priority:** LOW
+- **Severity:** Medium - Utječe na osnovnu funkcionalnost, korisnik može zaobići ponovnim uploadom i promjenom imena prije pritiska Upload
+
+---
+
+**7. Polje za unos lozinke se ne resetira / nestanak gumba za otkrivanje lozinke**
+
+- **Steps:** MENU -> Login -> Unos emaila/kor. imena -> Unos netočne lozinke
+- **Expected results:** Upozorenje da je lozinka netočna, unos (input field) se briše ILI korisnik može otkriti lozinku sa Show password gumbom
+- **Actual results:** Upozorenje da je lozinka netočna, unos lozinke ostaje i gumb za otkrivanje lozinke nestaje
+
+- **Priority:** LOW
+- **Severity:** Minor - UX neugodnost
+
+---
+
+**8. Footer copyright link**
+
+- **Steps:** MENU -> Klik na (Copyright @) Blog Name u footeru
+- **Expected results:** Link vodi na stranicu autora/firme
+- **Actual results:** Ne događa se ništa
+
+![ALt Text](Images/bug8.png)
+
+- **Priority:** LOW
+- **Severity:** Minor - UX neugodnost, neispravnost HTML-a, korisnik očekuje nešto svojim klikom

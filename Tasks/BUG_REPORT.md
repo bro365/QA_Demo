@@ -20,7 +20,7 @@
 ![alt text](Images/bug1.1.png)
 
 - **Priority:** LOW
-- **Severity** Minor - UX neugodnost
+- **Severity:** Minor - UX neugodnost
 
 ---
 
@@ -40,7 +40,7 @@
 - **Expected results:** Povratak na HOME page te mogućnost nastavljanja navigacijom web stranice
 - **Actual results:** MENU gumb prestaje raditi, albumi drugih korisnika se ne prikazuju pri scrollanju dolje. Search bar prestaje raditi.
 - **Priority:** HIGH
-- **Severity** Major - prestanak funkcionalnosti web stranice
+- **Severity:** Major - prestanak funkcionalnosti web stranice
 
 ---
 
@@ -108,6 +108,17 @@
 - **Actual results:** Ne događa se ništa
 
 ![ALt Text](Images/bug8.png)
+
+- **Priority:** LOW
+- **Severity:** Minor - UX neugodnost, neispravnost HTML-a, korisnik očekuje nešto svojim klikom
+
+---
+
+**9. Social Login neispravnost**
+
+- **Steps:** MENU -> Login -> Klik na bilo koji Social Login gumb
+- **Expected results:** Link vodi na stranicu/popup za prijavu s društvenom mrežom
+- **Actual results:** Ne događa se ništa / Console -> Error 400 Bad request
 
 - **Priority:** LOW
 - **Severity:** Minor - UX neugodnost, neispravnost HTML-a, korisnik očekuje nešto svojim klikom

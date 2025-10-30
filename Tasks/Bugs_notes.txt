@@ -6,3 +6,4 @@
 6. Uploadanje slike s vec postojecim imenom - nemogucnost izmjene imena
 7. Login - netocan password ostaje u input boxu, ne brise se.
 8. Footer copyright link
+9. Social login 

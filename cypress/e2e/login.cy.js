@@ -13,7 +13,7 @@ describe('Baasic Photo Gallery - Login Test', () => {
     cy.contains('Login').should('be.visible');
   });
 
-  it('should login successfully with valid credentials', () => {
+  it('should login/logout successfully with valid credentials', () => {
     const email = 'fstest1';
     const password = '12345678';
 
@@ -22,16 +22,23 @@ describe('Baasic Photo Gallery - Login Test', () => {
     cy.get('button[type="submit"]').should('be.visible').click({ force: true });
 
     cy.url().should('not.include', '/login');
-    //cy.contains('Logout', { timeout: 10000 }).should('be.visible');
-  });
-/*
-  it('should show an error for invalid credentials', () => {
-    cy.get('input[name="username"]').type('wronguser@test.com');
-    cy.get('input[name="password"]').type('wrongpassword', { log: false });
-    cy.contains('Login').click();
 
-    cy.get('.alert-danger, .error, .validation-error')
-      .should('be.visible')
-      .and('contain.text', 'Invalid');
-  }); */
+   /// Open the menu
+  cy.contains('a.menu__title', 'Menu')
+    .should('be.visible')
+    .click({ force: true });
+  
+  cy.wait(1000);
+
+  // Click logout from the menu
+  cy.contains('span.nav__link', 'Log out')
+    .should('be.visible')
+    .click({ force: true });
+
+  // Verify redirect back to login
+  cy.url().should('include', '/login');
+  cy.get('form').should('be.visible');
+  });
+
+  
 });

@@ -23,7 +23,7 @@ describe('Baasic Photo Gallery - Login Test', () => {
 
     cy.url().should('not.include', '/login');
 
-   /// Open the menu
+   // Open the menu
   cy.contains('a.menu__title', 'Menu')
     .should('be.visible')
     .click({ force: true });
@@ -40,5 +40,4 @@ describe('Baasic Photo Gallery - Login Test', () => {
   cy.get('form').should('be.visible');
   });
 
-  
 });

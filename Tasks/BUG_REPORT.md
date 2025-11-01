@@ -3,7 +3,7 @@
 ## Test info
 
 - ### OS - Windows 11 Home (24H2)
-- ### Browser - Microsoft Edge
+- ### Browser - Microsoft Edge v141.0
 
 ---
 

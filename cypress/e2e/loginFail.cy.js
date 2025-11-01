@@ -2,7 +2,7 @@ describe("Login Failed Test", () => {
   const baseUrl =
     "https://demo.baasic.com/angular/starterkit-photo-gallery/login";
 
-  beforeEach(() => {
+  before(() => {
     cy.visit(baseUrl);
   });
 

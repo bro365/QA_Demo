@@ -10,15 +10,20 @@ Napomena: Testovi su napravljeni za testiranje s postavljenim User credentials.
 
 **1. login.cy.js**
 
-- samo pokrenuti skriptu preko cypress UI
+- pokrenuti skriptu preko Cypress UI
 - skripta obavlja login i logout sa postavljenim username i pw (Credentials.txt file)
 
-**2. createAlbum.cy.js**
+**2. loginFail.cy.js**
+
+- pokrenuti skriptu preko Cypress UI
+- skripta provjerava netočne login informacije
+
+**3. createAlbum.cy.js**
 
 - testiranje kreiranja novog albuma
 - za ponovno testiranje, potrebno je **izbrisati kreirani "Cypress Test Album"**
 
-**3. uploadPhoto.cy.js**
+**4. uploadPhoto.cy.js**
 
 - testiranje uploada slike
 - skripta pozicionira test u napravljeni album **UploadPhotoTestAlbum (NE BRISATI ALBUM!)**

@@ -38,10 +38,5 @@ Cypress.Commands.add('loginReq', (username, password) => {
     // Wait for profile redirect or presence of a logged-in element
     cy.url({ timeout: 10000 }).should('not.include', '/login');
     
-  }, {
-    validate() {
-      // optional validation that session is still valid before reuse
-      cy.visit('https://demo.baasic.com/angular/starterkit-photo-gallery/profile/KHWznyYbOH0eyTdzv8anZc');    
-    }
   });
 });

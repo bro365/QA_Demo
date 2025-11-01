@@ -29,7 +29,6 @@ Glavna funkcionalnost aplikacije je izrada i pregled korisničkih albuma. Korisn
 - **Manual testing** za početno istraživanje i UI verifikaciju.
 - **Automatizacija** pomoću Cypress-a.
 - Fokus na **kritične tokove** (login, upload, delete).
-- **Regression testovi** prije produkcijskog puštanja.
 
 ## 5. Zaključak
 

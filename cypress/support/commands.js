@@ -23,3 +23,25 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('loginReq', (username, password) => {
+  // Use cy.session so login is cached and reused across tests
+  cy.session([username, password], () => {
+    // Go to the site's login page (frontend route)
+    cy.visit('https://demo.baasic.com/angular/starterkit-photo-gallery/login');
+
+    // Fill the form — adjust selectors if the DOM differs
+    cy.get('input[name="username"]').clear().type(username);
+    cy.get('input[name="password"]').clear().type(password);
+    cy.get('button[type="submit"]').click();
+
+    // Wait for profile redirect or presence of a logged-in element
+    cy.url({ timeout: 10000 }).should('not.include', '/login');
+    
+  }, {
+    validate() {
+      // optional validation that session is still valid before reuse
+      cy.visit('https://demo.baasic.com/angular/starterkit-photo-gallery/profile/KHWznyYbOH0eyTdzv8anZc');    
+    }
+  });
+});

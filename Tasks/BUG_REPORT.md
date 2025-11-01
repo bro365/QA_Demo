@@ -77,7 +77,7 @@
 
 ---
 
-**6. Uploadanje slike s postojećim imenom**
+**6. Uploadanje slike s postojećim imenom (11.1 - Fixed?)**
 
 - **Steps:** (Pretpostavka da je korisnik prijavljen i već ima album i sliku) -> MENU -> Profile -> Klik na album -> Upload photo -> Upload image -> (Photo name je isti kao i prethodna slika) -> Upload
 - **Expected results:** Upozorenje da je ime slike isto, mogućnost promjene imena slike te obaviti upload

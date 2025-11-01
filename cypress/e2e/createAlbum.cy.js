@@ -18,7 +18,7 @@ describe('Upload new album with cover', () => {
       .click();
 
     // Fill in album title and description
-    cy.get('input[name="albumName"]').type('Cypress Test Album');
+    cy.get('input[name="albumName"]').type('CypressTestAlbum (delete after creation)');
     cy.get('textarea[name="albumDescription"]').type('Automated Cypress QA album');
 
     //Submit album creation form

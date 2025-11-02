@@ -23,8 +23,7 @@ Napomena: Testovi su napravljeni za testiranje s postavljenim User credentials.
 - testiranje kreiranja novog albuma
 - za ponovno testiranje, potrebno je **izbrisati kreirani "Cypress Test Album"**
 
-**4. uploadPhoto.cy.js**
+**4. uploadDeletePhoto.cy.js**
 
-- testiranje uploada slike
+- testiranje uploada i brisanja slike
 - skripta pozicionira test u napravljeni album **UploadPhotoTestAlbum (NE BRISATI ALBUM!)**
-- za ponovno testiranje, potrebno je izbrisati sliku koja se uploada preko testa!
